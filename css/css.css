@@ -1,0 +1,1098 @@
+﻿body{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 100;
+    letter-spacing:1px;
+    background: #f1f1f1;
+    overflow-x: hidden;
+}
+.loading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999999;
+    background: #242424;
+    text-align: center;
+    padding-top: 200px;
+}
+
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #131d3a;
+}
+.main{
+    max-width: 1000px;
+}
+header .main .left{
+    float: left;
+}
+
+header .main .left img{
+    width:100%;
+    height:100%;
+}
+
+header .main .right{
+    position: relative;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform : uppercase;
+}
+header .main .right a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header .main .right .iconfont{
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+}
+header .main .right .drop-down{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    top:70px;
+    opacity: 0;
+}
+@media screen and (max-width: 768px) {
+    header .main .right .drop-down{
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        position: fixed;
+        top:70px;
+        left: 0;
+        right: 0;
+    }
+}
+header .main .right .drop-down li{
+    background: #191919;
+    list-style: none;
+    color: #ffffff;
+    line-height: 44px;
+    padding: 0 14px;
+}
+header .main .right .drop-down li:hover{
+    background: #fcb800;
+    cursor: pointer;
+}
+header .main img{
+    width: 134px;
+    height: 44px;
+}
+header .main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header .main .menu li{
+    list-style: none;
+    float: left;
+    color: #ffffff;
+    padding:0 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+header .main .menu li:hover{
+    color: #fcb800;
+}
+header .main .menu li span{
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+
+.page1{
+    margin-top: 70px;
+    -webkit-background-image:url("../images/page1_bg.png");
+    -moz-background-image: url("../images/page1_bg.png");
+    -o-background-image: url("../images/page1_bg.png");;
+    background-image: url("../images/page1_bg.png");
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size:100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    color: #ffffff;
+}
+.page1 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.page1 .holder{
+    padding-right: 30%;
+}
+
+.page1 .title{
+    text-align: center;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing:2px;
+    padding: 50px 0px 50px 50px;
+    padding-bottom: 0px;
+}
+
+.page1 .messageinfo
+{
+    padding-left: 15%;
+    padding-bottom: 2%;
+}
+
+.page1 .ClassyCountdownDemo {
+    margin: 20px auto;
+    max-width: 440px;
+    width: calc(100%);
+    padding: 10px 0px 10px 10px;
+    padding-bottom: 0px;
+    display: block;
+}
+#page1_platform{
+    opacity: 0;
+    max-width: 600px;
+    text-align: center;
+    font-weight: 200;
+}
+#page1_platform .title{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#page1_platform .instructions{
+    font-size: 14px;
+    font-weight: 400;
+}
+#page1_platform img{
+    width: 100px;
+    height: auto;
+}
+.page1 .btn-div{
+    text-align: center;
+    
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.page1 .btn-div .btn{
+    margin: 6px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 100;
+    min-width: 240px;
+    font-size: 16px;
+}
+.page1 .btn-div .download{
+    background: #FCB800;
+}
+
+.page1 .btn-div .download1{
+    background: #FCB800;
+}
+
+.page1 .contact-div{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.page1 .contact-div .iconfont{
+    font-size: 28px;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .page1 .title{
+        font-size: 28px;
+    }
+    .page1 .ClassyCountdownDemo {
+        margin: 10px auto;
+        max-width: 300px;
+    }
+    .page1 .btn-div .btn{
+        margin: 6px;
+        padding: 4px 10px;
+        border-radius: 6px;
+        color: #ffffff;
+        font-weight: 400;
+        min-width: 180px;
+        font-size: 12px;
+    }
+    .page1 .contact-div{
+        margin-top: 20px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .page1 .contact-div .iconfont{
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 4px;
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page1 .title{
+        font-size: 18px;
+    }
+}
+
+
+.page2{
+    background: #131d3a;
+    padding: 6% 0;
+    text-align: center;
+}
+.page2 .main .row{
+    margin-bottom: 6%;
+}
+.page2 .main .title{
+    font-size: 50px;
+    font-weight: normal;
+    color: #ffffff;
+}
+.page2 .main .title2{
+    font-size: 36px;
+    font-weight: normal;
+    color: #ffffff;
+}
+.page2 .main .content{
+    font-size: 24px;
+    font-weight: 200;
+    color: #a8b5db;
+}
+.page2 .main .content2{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 40px;
+    color: #a8b5db;
+    text-align: justify;
+    line-height:30px;  
+}
+@media screen and (max-width: 768px){
+    .page2 .main .title{
+        font-size: 24px;
+    }
+    .page2 .main .title2{
+        font-size: 18px;
+    }
+    .page2 .main .content{
+        font-size: 12px;
+    }
+    .page2 .main .content2{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+.page3{
+    padding: 4% 0;
+    text-align: center;
+    background: #1f2b4c;
+}
+.page3 .card{
+    padding: 0 32px;
+}
+.page3 .title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/**
+新添加样式
+*/
+.page3 .card{
+    display: table;
+    margin-bottom: 10px;
+}
+.page3 .left{
+    display: table-cell;
+    vertical-align: middle;
+}
+.page3 .right{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 24px;
+}
+.page3 img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 24px auto;
+}
+.page3 .row .title{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.page3 .row .title2{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.page3 .main .row{
+    margin-bottom: 8%;
+}
+.page3 .main .title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.page3 .content {
+    font-size: 20px;
+    font-weight: 200;
+    color: #a8b5db;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px){
+    .participate-link{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .page3 .card{
+        padding: 0 12px;
+    }
+    .page3 .right{
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 12px;
+    }
+    .page3 .title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .page3 img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 24px auto;
+    }
+    .page3 .row .title{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    .page3 .content{
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
+.page31{
+    padding: 6% 0;
+    background: #131d3a;
+    text-align: center;
+}
+
+.page31 img{
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+}
+
+.page31 .title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page4{
+    background: #1f2b4c;
+    padding: 8% 0;
+    text-align: left;
+}
+
+.page4 .title{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+.page4 .card img{
+    width: 118px;
+    height: 118px;
+}
+.page4 .card .title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fcb800;
+    font-weight: normal;
+}
+.page4 .card .content{
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+}
+.page4 .card .left{
+    float: left;
+    width: 118px;
+    height: 118px;
+}
+.page4 .card .col-md-6{
+    margin-top: 40px;
+}
+.page4 .card .right{
+    float: left;
+    font-size: 20px;
+    font-weight: 200;
+}
+.page4 .card .right li:nth-child(1){color: #3E99F0;}
+.page4 .card .right li:nth-child(2){color: #54df90;}
+.page4 .card .right li:nth-child(3){color: #d1d1d1;}
+.page4 .card .right li:nth-child(4){color: #FFBE2C;}
+.page4 .card .right li:nth-child(5){color: #3E99F0;}
+.page4 .card .right li:nth-child(6){color: #54df90;}
+.page4 .card .right li:nth-child(7){color: #d1d1d1;}
+.page4 .card .right li:nth-child(8){color: #FFBE2C;}
+/*.page4 .card .right li:nth-child(1){color: #000000;}
+.page4 .card .right li:nth-child(2){color: #000000;}
+.page4 .card .right li:nth-child(3){color: #000000;}
+.page4 .card .right li:nth-child(4){color: #000000;}*/
+
+
+@media screen and (max-width: 768px){
+    .page4 .title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .page4 .card img{
+        width: 70px;
+        height: 70px;
+    }
+    .page4 .card .title{
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .page4 .card .content{
+        font-size: 12px;
+    }
+    .page4 .card .left{
+        float: left;
+        width: 80px;
+        height: 80px;
+    }
+    .page4 .card .col-md-6{
+        margin-top: 20px;
+    }
+    .page4 .card .right{
+        float: left;
+        font-size: 14px;
+    }
+}
+
+
+.page5{
+    background: #131d3a;
+    padding: 6% 0;
+    text-align: left;
+}
+.page5 .title{
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+.page5 .sub_title{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 40px;
+    font-weight: 200;
+}
+.page5 .team-div{
+    margin-top: 30px;
+    text-align: center;
+}
+.page5 .team-div .card{
+    margin: 20px 0;
+}
+.page5 .team-div .card img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #d2d8dd;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #000000;
+}
+.page5 .team-div .card .card-content{
+    margin-top: 20px;
+    padding: 16px;
+    text-align: left;
+    border-radius: 6px;
+    border: 1px solid #283762;
+    font-size: 12px;
+    font-weight: 200;
+    background: #283762;
+}
+.page5 .team-div .card .card-content .title1{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.page5 .team-div .card .card-content .title2{
+    font-size: 14px;
+    color: #fcb800;
+    margin: 0px auto;
+    font-weight: 400;
+}
+.page5 .team-div .card .card-content .info{
+    margin-top: 14px;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px){
+    .page5 .title{
+        font-size: 18px;
+    }
+    .page5 .sub_title{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .page5 .team-div{
+        margin-top: 15px;
+    }
+    .page5 .team-div .card .card-content{
+        margin-top: 10px;
+        padding: 8px;
+        text-align: left;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .page5 .team-div .card .card-content .title1{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .page5 .team-div .card .card-content .title2{
+        font-size: 12px;
+        margin: 5px auto;
+        font-weight: 400;
+    }
+    .page5 .team-div .card .card-content .info{
+        margin-top: 7px;
+    }
+}
+
+
+
+.page6{
+    background: #1f2b4c;
+    padding: 8% 0;
+    text-align: left;
+}
+.page6 .title{
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.page6 .sub_title{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 40px;
+    font-weight: 200;
+}
+.page6 .team-div{
+    margin-top: 30px;
+    text-align: center;
+}
+.page6 .team-div .card{
+    margin: 20px 0;
+}
+.page6 .team-div .card img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #d2d8dd;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.page6 .team-div .card .card-content{
+    margin-top: 20px;
+    background: transparent;
+    padding: 16px;
+    text-align: left;
+    border-radius: 6px;
+    border: 1px solid #283762;
+    font-size: 12px;
+    font-weight: 200;
+    background: #283762;
+}
+.page6 .team-div .card .card-content .title1{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.page6 .team-div .card .card-content .title2{
+    font-size: 14px;
+    margin: 0px auto;
+    font-weight: 400;
+    color: #fcb800;
+}
+.page6 .team-div .card .card-content .info{
+    margin-top: 14px;
+    color: #ffffff;
+}
+@media screen and (max-width: 1200px){
+    .page6 .team-div .card{
+        margin: 20px 0;
+        float: inherit;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .page6 .title{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .page6 .sub_title{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .page6 .team-div{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .page6 .team-div .card img{
+        width: 100px;
+        height: 100px;
+        border: 3px solid #2fb067;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .page6 .team-div .card .card-content{
+        margin-top: 10px;
+        background: transparent;
+        padding: 8px;
+        text-align: left;
+        border-radius: 5px;
+        border: 1px solid #191919;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .page6 .team-div .card .card-content .title1{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .page6 .team-div .card .card-content .title2{
+        font-size: 12px;
+        margin: 5px auto;
+        font-weight: 400;
+    }
+    .page6 .team-div .card .card-content .info{
+        margin-top: 7px;
+    }
+}
+
+.page7 {
+    background: #131d3a;
+    padding: 8% 0;
+    text-align: center;
+}
+
+.page7 .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.page7 .sub_title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+.page7 .cell {
+    text-align: center;
+}
+
+.page7 .cell img {
+    width: 30%;
+    height: 30%;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.page7 .cell img:hover {
+    animation: fd 600ms forwards;
+}
+
+@keyframes fd {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes fd {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@-moz-keyframes fd {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@-o-keyframes fd {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page7 .title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .page7 .sub_title {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px auto;
+    }
+    .page7 .card {
+        margin: 6px auto;
+    }
+    .page7 .card img {
+        width: 100px;
+    }
+}
+
+
+.page8 {
+    background: #1f2b4c;
+    padding: 8% 0;
+    text-align: center;
+}
+
+.page8 .road_line {
+    border-top: 2px solid #fcb800;
+    margin: 0 10%;
+    position: relative;
+    top: 50px;
+}
+
+.page8 .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.page8 .card {
+    background: #fcb800;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.page8 .card .sub_title {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.page8 .card .content {
+    padding: 10px;
+    border: 1px solid #fcb800;
+    background: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.page8 .card .content .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto 5px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .page8 .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #fcb800;
+    }
+    .page8 .card {
+        background: #fcb800;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .page8 .card .sub_title {
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .page8 .card .content {
+        padding: 5px;
+        border: 1px solid #fcb800;
+        background: #f7f7f7;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .page8 .card .content .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 5px auto 2px auto;
+    }
+}
+
+.page9 {
+    padding: 8% 0;
+    background: #131d3a;
+}
+
+.page9 .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page9 ul {
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.page9 .card {
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.page9 .card .title2 {
+    font-size: 14px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.page9 a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .page9 ul {
+        margin-top: 20px;
+    }
+    .page9 .card .title2 {
+        font-size: 12px;
+    }
+    .page9 .title {
+        font-size: 18px;
+    }
+    .page9 .card {
+        border-radius: 4px;
+        margin-top: 4px;
+        font-size: 12px;
+    }
+    .page9 .card .title2 {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.page10 {
+    background: #000;
+    padding: 3% 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.page10 .title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.page10 .content {
+    margin: 40px auto;
+}
+
+.page10 .cell img {
+    padding: 20px;
+}
+
+.page10 .content div {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.page10 .footer {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .page10 .title {
+        font-size: 18px;
+    }
+    .page10 .content {
+        margin: 20px auto;
+    }
+    .page10 .content div {
+        font-size: 10px;
+        font-weight: 200;
+        margin-bottom: 4px;
+    }
+    .page10 .footer {
+        font-size: 12px;
+        font-weight: 200;
+    }
+}

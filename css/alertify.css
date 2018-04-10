@@ -1,0 +1,240 @@
+﻿/* Alertify */
+.alertify-log {
+  padding: 20px;
+  border-radius: 4px;
+  color: #212529;
+  font-size:18px;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='30'><line x1='5' y1='10' x2='15' y2='20' stroke='%23bbb' stroke-width='2'/><line x1='15' y1='10' x2='5' y2='20' stroke='%23bbb' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #ebf0f3;
+}
+
+.alertify-log button {
+  white-space: normal;
+}
+
+.btn-outline-primary{
+	color:#007bff;
+	background-color:transparent;
+	background-image:none;
+	border-color:#007bff
+}
+
+.btn-outline-primary:hover{
+	color:#fff;
+	background-color:#007bff;
+	border-color:#007bff
+}
+
+.btn-outline-primary.focus,.btn-outline-primary:focus{
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.5)
+}
+
+.btn-outline-primary.disabled,.btn-outline-primary:disabled{
+	color:#007bff;
+	background-color:transparent
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled).active,.btn-outline-primary:not([disabled]):not(.disabled):active,.show>.btn-outline-primary.dropdown-toggle{
+	color:#fff;
+	background-color:#007bff;
+	border-color:#007bff;
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.5)
+}
+
+.btn-primary{
+	color:#fff;
+	background-color:#007bff;
+	border-color:#007bff
+}
+
+.btn-primary:hover{
+	color:#fff;
+	background-color:#0069d9;
+	border-color:#0062cc
+}
+
+.btn-primary.focus,.btn-primary:focus{
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.5)
+}
+
+.btn-primary.disabled,.btn-primary:disabled{
+	background-color:#007bff;
+	border-color:#007bff
+}
+
+.btn-primary:not([disabled]):not(.disabled).active,.btn-primary:not([disabled]):not(.disabled):active,.show>.btn-primary.dropdown-toggle{
+	color:#fff;
+	background-color:#0062cc;
+	border-color:#005cbf;
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.5)
+}
+
+.slack-btn-container, .telegram-btn-container {
+  margin: 10px 10px 10px 0 !important;
+}
+
+.slack-btn {
+  padding-left:42px;
+  background-image: url('../fonts/slack-logo.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+}
+
+.slack-btn:hover {
+  background-image: url('../fonts/slack-logo-white.svg');
+}
+
+.telegram-btn {
+  padding-left:45px;
+  background-image: url('../fonts/telegram-logo.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 7px;
+}
+
+.telegram-btn:hover {
+  background-image: url('../fonts/telegram-logo-white.svg');
+}
+
+.alertify,
+.alertify-show,
+.alertify-log {
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	    -ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+.alertify-hide {
+	-webkit-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	   -moz-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	    -ms-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	     -o-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	        transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
+}
+.alertify-log-hide {
+	-webkit-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	   -moz-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	    -ms-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	     -o-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	        transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
+}
+.alertify-cover {
+	position: fixed; z-index: 99999;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color:white;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+	.alertify-cover-hidden {
+		display: none;
+	}
+.alertify {
+	position: fixed; z-index: 99999;
+	top: 50px; left: 50%;
+	width: 550px;
+	margin-left: -275px;
+	opacity: 1;
+}
+	.alertify-hidden {
+		-webkit-transform: translate(0,-150px);
+		   -moz-transform: translate(0,-150px);
+		    -ms-transform: translate(0,-150px);
+		     -o-transform: translate(0,-150px);
+		        transform: translate(0,-150px);
+		opacity: 0;
+		display: none;
+	}
+	/* overwrite display: none; for everything except IE6-8 */
+	:root *> .alertify-hidden {
+		display: block;
+		visibility: hidden;
+	}
+.alertify-logs {
+	position: fixed;
+	z-index: 5000;
+	bottom: 10px;
+	right: 10px;
+	width: 300px;
+}
+.alertify-logs-hidden {
+	display: none;
+}
+	.alertify-log {
+		display: block;
+		margin-top: 10px;
+		position: relative;
+		right: -300px;
+		opacity: 0;
+	}
+	.alertify-log-show {
+		right: 0;
+		opacity: 1;
+	}
+	.alertify-log-hide {
+		-webkit-transform: translate(300px, 0);
+		   -moz-transform: translate(300px, 0);
+		    -ms-transform: translate(300px, 0);
+		     -o-transform: translate(300px, 0);
+		        transform: translate(300px, 0);
+		opacity: 0;
+	}
+	.alertify-dialog {
+		padding: 25px;
+	}
+		.alertify-resetFocus {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+		.alertify-inner {
+			text-align: center;
+		}
+		.alertify-text {
+			margin-bottom: 15px;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			font-size: 100%;
+		}
+		.alertify-buttons {
+		}
+			.alertify-button,
+			.alertify-button:hover,
+			.alertify-button:active,
+			.alertify-button:visited {
+				background: none;
+				text-decoration: none;
+				border: none;
+				/* line-height and font-size for input button */
+				line-height: 1.5;
+				font-size: 100%;
+				display: inline-block;
+				cursor: pointer;
+				margin-left: 5px;
+			}
+
+@media only screen and (max-width: 680px) {
+	.alertify,
+	.alertify-logs {
+		width: 90%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	.alertify {
+		left: 5%;
+		margin: 0;
+	}
+}
